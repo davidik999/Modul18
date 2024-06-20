@@ -1,0 +1,167 @@
+.realize {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top:-210px;
+    z-index: 100;
+    @media (min-width: @desktop-width){
+        top:-0;  
+        height: 864px;
+        background-color: rgba(0, 0, 0, 0.7);
+        background-image: url('@{imagePath}realize__background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-blend-mode:multiply;
+    }
+}
+.realize__headtext {
+    position: relative;
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 139%;
+    text-transform: uppercase;
+    text-align: center;
+    color: @textbright;    
+    word-break: break-word;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 28px;
+    @media (min-width: @desktop-width){
+        font-size: 27px;
+        padding-top: 140px;
+        padding-left: 0;
+        text-align: left;
+        padding-right: 180px;
+    }
+}
+#realize__slides {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow:hidden;
+    @media (min-width: @desktop-width){
+        display: none;
+    }
+}
+.realize__wrapdesktop {
+    @media (min-width: @desktop-width){
+        display: flex;
+        flex-direction: row;
+    }
+}
+.realize__buttons {
+    position: absolute;
+    top:57%;
+    left:13px;
+    width: 312px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: @desktop-width){
+        display: none;
+    }
+}
+.realize__slideimg {
+    width:340px;
+    height: 242px;
+}
+.realize__buttonsleft {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background-color: @textbright;
+    background-image: url('@{imagePath}left_button.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 2;
+}
+.realize__buttonsright{
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background-color: @textbright;
+    background-image: url('@{imagePath}right_button.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 2;
+}
+.realize__buttonsleft:hover{
+    cursor: pointer;
+    background-color:#E4981E;
+}
+.realize__buttonsright:hover{
+    cursor: pointer;
+    background-color:#E4981E;
+}
+.realize__leftwrap {
+    @media (min-width: @desktop-width){
+        display: flex;
+        flex-direction: column;
+        width: 485px;
+    }
+}
+.realize__typelist{
+    display: none;
+    @media (min-width: @desktop-width){
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.realize__typeli {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 191%;
+    color: @textmain;    
+    margin-bottom: 10px;
+}
+.realize__typeli:hover{
+    cursor: pointer;
+    color: @textbright; 
+}
+.realize__typeliactive {
+    color: @textbright; 
+    text-decoration: underline;
+}
+.realize__rightwrap {
+    @media (min-width: @desktop-width){
+        position: relative;
+        width: 750px;
+    }
+}
+.realize__slidesdesk{
+    display: none;
+    @media (min-width: @desktop-width){
+        display: flex;
+        flex-direction: column;
+    }
+}
+.realize__slidesdeskli {
+    top: -110px;
+    position: absolute;
+    height: 1017px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 39px;
+    column-gap: 45px;   
+    opacity: 0; 
+    overflow: hidden;
+    width: 750px;
+}
+.slidesdeskliactive {
+    opacity: 1;
+}
+.realize__slidesdeskliimg {
+    @media (min-width: @desktop-width){
+        width: 353px;
+    }
+}
+.realize__slidesdeskliimg:nth-child(1) {
+    margin-top: 70px;
+}

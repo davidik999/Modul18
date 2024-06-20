@@ -1,0 +1,74 @@
+//переменные
+@backcolor:  #131313;
+@textmain:#fff;
+@textbright:#e3b873;
+
+h1,h2,ul,a, p, span {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+body {
+    // font-family: 'Yeseva One', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 5311px;
+    @media (min-width: @desktop-width){
+        height: 6199px;
+    }
+}
+@imagePath: ~"../img/";
+
+.containernav {
+    width: 340px;
+    margin: 0 auto;
+    @media (min-width: @desktop-width){
+        width: 1256px;
+    }
+}
+.container {
+    position: relative;
+    width: 340px;
+    margin: 0 auto;
+    @media (min-width: @desktop-width){
+        width: 1171px;
+    }
+}
+.containerwidth {
+    position: relative;
+    width: 340px;
+    margin: 0 auto;
+    @media (min-width: @desktop-width){
+        width: 1236px;
+    }
+}
+.containerquestion{
+    position: relative;
+    width: 340px;
+    margin: 0 auto;
+    @media (min-width: @desktop-width){
+        width: 520px;
+    }    
+}
+ 
+@desktop-width: 1440px;
+
+@import "Block/header.less";
+@import "Block/preview.less";
+@import "Block/completedproject.less";
+@import "Block/onlinecontrol.less";
+@import "Block/typesofrepair.less";
+@import "Block/realize.less";
+@import "Block/clients.less";
+@import "Block/question.less";
+@import "Block/footer.less";
+
+
+

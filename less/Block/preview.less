@@ -1,0 +1,134 @@
+.preview {
+    height: 476px;
+    background-image: url('@{imagePath}kithen_mobile.png');
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode:multiply;
+    background-repeat: no-repeat;
+    @media (min-width: 376px) {
+        background-image: url('@{imagePath}kitchen_desktop.jpg');
+        background-size: cover;
+        background-position: 50% 75%;
+      }
+    @media (min-width: @desktop-width){
+        height: 707px;
+    }
+}
+.preview__wrap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 85px;
+    @media (min-width: @desktop-width){
+        padding-top: 194px;
+        width: 676px;
+    }
+}
+.preview__maintext{
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 133%;
+    text-transform: uppercase;
+    color: @textmain;    
+    margin-bottom: 16px;
+    word-wrap: break-word;
+    @media (min-width: @desktop-width){
+        font-size: 40px;  
+        text-align: left;
+    }
+}
+.preview__maintextbr {
+    display: none;
+    @media (min-width: @desktop-width){
+        display: block;
+    }
+}
+.preview__select{
+    color: @textbright;
+}
+.preview__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 136%;
+    word-break: break-word;
+    color: @textmain;
+    margin-bottom: 50px;
+    @media (min-width: @desktop-width){
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 164%;
+        padding-right: 150px;
+        margin-bottom: 22px;
+    }
+}
+.preview__wrapbutton{
+    @media (min-width: @desktop-width){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 434px;
+    }
+}
+.preview__linkorange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 51px;
+    width: 100%;
+    color: @textmain;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    background-color: @textbright;
+    margin-bottom: 26px;
+    @media (min-width: @desktop-width){
+        border-radius: 2px;
+        width: 207px;
+        height: 51px;
+    }
+}
+.preview__linkorange:hover{
+    background-color: inherit;
+    border: 1px solid @textmain;
+    cursor: pointer;
+}
+.preview__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    width: 100%;
+    border: 1px solid @textmain;
+    background-color:inherit;
+    color: @textmain;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    @media (min-width: @desktop-width){
+        border-radius: 2px;
+        width: 207px;
+        height: 51px;
+    }
+}
+.preview__link:hover{
+    background-color: @textbright;
+    border: none;
+    cursor: pointer;
+}
+.preview__textmobilebr {
+    @media (min-width: @desktop-width){
+        display: none;
+    }
+}
+.preview__linkmobile {
+    @media (min-width: @desktop-width){
+        display: none;
+    }
+}
+.preview__linkdesk{
+    display: none;
+    @media (min-width: @desktop-width){
+        display: block;
+    }
+}

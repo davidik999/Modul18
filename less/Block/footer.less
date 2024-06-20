@@ -1,0 +1,106 @@
+.footer {
+    position: relative;
+    padding-top: 50px;
+    top:-340px;
+    background-color: @backcolor;
+    display: grid;
+    grid-auto-flow: column;
+    @media (min-width: @desktop-width){
+        min-height: 900px;
+        top:-460px;  
+        background-color:rgba(0, 0, 0, 0.85);
+        background-image: url('@{imagePath}footer_backimg.png');
+        background-size: cover;
+        background-position: 50% 75%;
+        background-blend-mode:multiply;
+    }
+}
+.footerwrap {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @desktop-width){
+        margin-top: 220px;
+        display: grid;
+        grid-template-rows: 30px 30px 80px 465px;
+        align-items: center;
+    }
+}
+.footer__map {
+    width: 340px;
+    height: 255px;
+    margin-bottom: 41px;
+    @media (min-width: @desktop-width){
+        padding-top: 20px;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        width: 925px;
+        height: 465px;
+        margin: 0 auto;
+    }
+}
+.footer__adress {
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 139%;
+    text-transform: uppercase;
+    text-align: center;
+    color: @textbright;    
+    padding-right: 10px;
+    padding-left: 10px;
+    word-break: break-word;
+    @media (min-width: @desktop-width){
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+}
+.footer__adresstel {
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 139%;
+    text-transform: uppercase;
+    text-align: center;
+    color: @textbright;    
+    padding-right: 10px;
+    padding-left: 10px;
+    word-break: break-word; 
+    @media (min-width: @desktop-width){
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }   
+}
+.footer__socialblock {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    @media (min-width: @desktop-width){
+        display: flex;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        width: 71px;
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+.footer__sociallist {
+    width: 99px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;    
+}
+.footer__socialmail:hover {
+    fill: #E4981E;
+    cursor: pointer;
+}
+.footer__socialinst:hover {
+    fill: #E4981E;
+    cursor: pointer;    
+}
+.footer__sociallistimg {
+    @media (min-width: @desktop-width){
+        width: 28px;
+        height: 29px;
+    }   
+}

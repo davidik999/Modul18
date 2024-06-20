@@ -1,0 +1,274 @@
+.completedproject {
+    background-color: @backcolor;
+    padding-bottom: 58px;
+    @media (min-width: @desktop-width){
+        min-height: 1020px;
+    }
+}
+.completedproject__topwrap {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 36px;
+    @media (min-width: @desktop-width){
+        width: 492px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+}
+.completedproject__headtext {
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 139%;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    text-align: center;    
+    color: @textbright;
+    word-break: break-word;
+    margin-bottom: 29px;
+    @media (min-width: @desktop-width){
+        padding-top: 30px;
+        font-size: 27px;
+        line-height: 139%;
+        letter-spacing: -0.07em; 
+        text-align: left;  
+        z-index: 100;
+    }
+}
+.completedproject__text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 158%;
+    text-align: center;
+    color: @textmain;    
+    padding-left: 10px;
+    padding-right: 10px;
+    word-break: break-word;
+    @media (min-width: @desktop-width){
+        display: inline-block;
+        min-height: 126px;
+        font-size: 14px;
+        line-height: 191%;
+        text-align: left;  
+        padding-left: 0;
+        padding-right: 50px;
+        z-index: 200;
+        overflow: auto;
+    }
+}
+.completedproject__caruselblock {
+    position: relative;
+    margin-top: 36px;
+    @media (min-width: @desktop-width){
+        margin-top: 0;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: -1;
+    }
+}
+.completedproject__slide {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @media (min-width: @desktop-width){
+        flex-direction: row-reverse;
+    }
+}
+#completedproject__slides {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.completedproject__slideimg {
+    position: relative;
+    margin-bottom: 30px;
+    @media (min-width: @desktop-width){
+        width: 679px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+.completedproject__slideinfowrap {
+    @media (min-width: @desktop-width){
+        width: 442px;
+        position: absolute;
+        top: 230px;
+    }
+}
+.completedproject__img {
+    position: relative;
+    width: 340px;
+    height: 241px; 
+    @media (min-width: @desktop-width){
+        width: 679px;
+        height: 482px;
+    }   
+}
+.completedproject__slideinfo {
+    display: grid;
+    grid-template-columns: 46% 54%;
+    grid-row-gap: 35px;
+    grid-template-rows: 60px 50px;
+    @media (min-width: @desktop-width){
+        grid-row-gap: 45px;
+    }
+}
+.completedproject__slidemaintext {
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 139%;
+    text-transform: uppercase;
+    color: @textbright;  
+    margin-bottom: 13px;  
+    @media (min-width: @desktop-width){
+        font-size: 18px;
+    }
+
+}
+.completedproject__slidetext {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 136%;
+    color: @textmain;    
+    word-break: break-word;
+    width: 95px;
+    padding-right: 10px;
+    @media (min-width: @desktop-width){
+        font-size: 13px;
+        line-height: 164%;
+    }
+}
+.completed__buttons {
+    position: absolute;
+    top:24%;
+    left:13px;
+    width: 312px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: @desktop-width){
+        left: 0;
+        top:70%;
+        width: 205px;
+    }
+}
+.completed__buttonsleft {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background-color: @textbright;
+    background-image: url('@{imagePath}left_button.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 2;
+    @media (min-width: @desktop-width){
+        width: 41px;
+        height: 24px;
+        border-radius: none;
+        background-color: inherit;
+        background-image: url('@{imagePath}buttonleft_desktop.svg');
+    }
+}
+.completed__buttonsright {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background-color: @textbright;
+    background-image: url('@{imagePath}right_button.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 2;
+    @media (min-width: @desktop-width){
+        width: 41px;
+        height: 24px;
+        border-radius: none;
+        background-color: inherit;
+        background-image: url('@{imagePath}buttonright_desktop.svg');
+    }
+}
+.completed__buttonsleft:hover{
+    cursor: pointer;
+    background-color:#E4981E;
+    @media (min-width: @desktop-width){
+        background-color: inherit;
+        background-image: url('@{imagePath}buttonleft_deskhover.svg'); 
+    }
+}
+.completed__buttonsright:hover{
+    cursor: pointer;
+    background-color:#E4981E;
+    @media (min-width: @desktop-width){
+        background-color: inherit;
+        background-image: url('@{imagePath}buttonright_deskhover.svg'); 
+    }
+}
+.completedprojectwrap {
+    @media (min-width: @desktop-width){
+       padding-top:107px; 
+       display: grid;
+       grid-template-columns: 492px 679px;
+       grid-template-rows: 70px 159px 500px;
+    }
+}
+.completed__slidenow {
+    display: none;
+    @media (min-width: @desktop-width){
+        display: block;
+        border-radius: 30px;
+        width: 9px;
+        height: 9px; 
+        background: rgba(255, 255, 255, 0.3);       
+    }
+}
+.completed__slidenowactive{
+    @media (min-width: @desktop-width){
+        background: @textmain;
+    }
+}
+.completedproject__nav {
+    display: none;
+    @media (min-width: @desktop-width){
+        display: block;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+}
+.completedproject__navlist{
+    display: none;
+    @media (min-width: @desktop-width){
+        display: flex;
+        width: 623px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }    
+}
+.completedproject__navli {
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 139%;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);    
+}
+.completedproject__navli:hover{
+    cursor: pointer;
+    color: @textbright;
+    text-decoration: underline;
+}
+.completedproject__navliactive {
+    color: @textbright;
+    text-decoration: underline;
+}

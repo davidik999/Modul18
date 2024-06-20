@@ -1,0 +1,101 @@
+.header {
+    background-color: @backcolor;
+    min-height: 58px;
+    @media (min-width: @desktop-width){
+        min-height: 83px;
+    }
+}
+.headerbottom{
+    display: none;
+    @media (min-width: @desktop-width){
+        position: relative;
+        top:-460px;
+        background-color: @backcolor;
+        display: flex;
+        min-height: 90px;
+        align-items: center;
+    }
+}
+.header__nav {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: @desktop-width){
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 37px;
+    }
+}
+.header__logo {
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: @textbright;
+}
+.header__tel {
+    font-weight: 400;
+    font-size: 11px;
+    color: @textmain;
+    @media (min-width: @desktop-width){
+        text-decoration: underline;
+        color: @textbright;
+    }
+}
+.header__tel:hover {
+    color: @textbright;
+    @media (min-width: @desktop-width){
+        text-decoration: underline;
+        color: @textmain;
+    }
+}
+.header__list {
+    display: none;
+    @media (min-width: @desktop-width){
+        padding-left: 45px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 581px;
+    }
+}
+.header__li {
+    display: block;
+    height: 30px;
+    font-weight: 400;
+    font-size: 11px;
+    color: @textmain;    
+}
+.header__li:hover {
+    cursor: pointer;
+    color: @textbright;
+    border-bottom: 1px solid @textbright;
+}
+.headeractive {
+    color: @textbright;
+}
+.header__button {
+    display: none;
+    @media (min-width: @desktop-width){
+        margin-top: -15px;
+        display: flex;
+        border: none;
+        border-radius: 2px;
+        width: 161px;
+        height: 37px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 11px;
+        text-transform: uppercase; 
+        color: @textmain; 
+        background-color: @textbright;
+    }
+}
+.header__button:hover {
+    cursor: pointer;
+    background-color: #E4981E;
+}

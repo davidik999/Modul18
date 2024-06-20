@@ -1,0 +1,169 @@
+.clients {
+    display: none;
+    @media (min-width: @desktop-width){
+        background-color: @textmain;
+        display: block;
+        background-image: url('@{imagePath}Frame.png');
+        background-size: 729px 649px;
+        background-repeat: repeat-x;
+        background-position: 0% 100%;
+    }
+}
+.clients__wrap {
+    padding-top: 115px;
+    display: flex;
+    flex-direction: column;
+}
+.clients__wraptop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.clients__headtext {
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 139%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #181818;    
+    margin-bottom: 10px;
+}
+.clients__imgblock {
+    position: relative;
+    width: 34px;
+    height: 30;
+    margin-bottom: 15px;
+}
+.clients__imgblock::before {
+    position: absolute;
+    content: '';
+    border-radius: 30px;
+    width: 32px;
+    height: 1px;
+    top:13px;
+    left: -40px;
+    background: @textbright;
+}
+.clients__imgblock::after {
+    position: absolute;
+    content: '';
+    border-radius: 30px;
+    width: 32px;
+    height: 1px;
+    top:13px;
+    right: -40px;
+    background: @textbright;
+}
+.clients__textabout {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 164%;
+    text-align: center;
+    color: #363636;    
+    word-break: break-word;
+    padding-left: 430px;
+    padding-right: 430px;
+}
+.clients__wrapbottom {
+    margin-bottom: 400px;
+}
+.clients__recomendlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 54px;
+}
+.clients__recomendlistli {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 376px;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.04);
+    background-color: @textmain;
+    min-height: 448px;
+}
+.clients__userinfo {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    column-gap: 20px;
+}
+.clients__userinfoimgblock {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.clients__userinfotext {
+    font-family: 'Yeseva One', sans-serif;
+    width: 178px;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 127%;
+    color: #181818; 
+    word-break: break-word;  
+    text-align: left; 
+}
+.clients__usertextrecomendation {
+    margin: 0 auto;
+    width: 324px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 180%;
+    color: #959595;    
+    margin-bottom: 50px;
+    word-break: break-word;  
+}
+.clients__licontainer {
+    width: 324px;
+    margin: 0 auto;
+}
+.clients__aboutrem {
+    position: absolute;
+    left: 0;
+    bottom: -27px;
+    display: flex;
+    flex-direction: row;
+}
+.clients__aboutremli {
+    position: relative;
+    font-family: 'Yeseva One', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+    margin-right: 1px;
+    height: 54px;
+    width: 115px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 139%;
+    text-transform: uppercase;
+    color: @textmain;
+    background-color: @textbright;
+}
+.clients__aboutremli::before {
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 31px;
+    top:13px;
+    left: 15px;
+    background-image: url('@{imagePath}metraj.svg');
+}
+.clients__aboutremli:nth-last-child(1){
+    width: 138px;
+}
+.clients__aboutremli:nth-last-child(1)::before {
+    position: absolute;
+    content: '';
+    width: 34px;
+    height: 34px;
+    top:10px;
+    left: 20px;
+    background-image: url('@{imagePath}calendar.svg');
+}

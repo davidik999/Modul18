@@ -1,0 +1,190 @@
+.question {
+    position: relative;
+    background-color: @backcolor;
+    display: flex;
+    top:-340px;
+    @media (min-width: @desktop-width){
+        margin: 0 auto;
+        width: 883px;
+        height: 445px;
+        top:-240px;  
+        z-index: 100;
+    }
+}
+.questionmainwrap {
+    display: flex;
+    flex-direction: column;
+}
+.question__maintext {
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 139%;
+    text-transform: uppercase;
+    text-align: center;
+    color: @textmain;  
+    padding-top: 170px; 
+    margin-bottom: 52px;
+    @media (min-width: @desktop-width){
+        padding-top: 35px;
+        margin-bottom: 32px;
+    }
+}
+.question__formwrap {
+    position: relative;
+}
+.question__formwrapname {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @desktop-width){
+        display: flex;
+        flex-direction: column;
+        width: 231px;
+    }
+}
+.question__formwraptel {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @desktop-width){
+        display: flex;
+        flex-direction: column;
+        width: 231px;
+    }
+}
+.question__formwrapquestion {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @desktop-width){
+        width: 516px;
+    }
+}
+.question__formwrappd {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @desktop-width){
+        width: 516px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.question__form {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @desktop-width){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}
+.question__formlabel {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 164%;
+    color: rgba(255, 255, 255, 0.5);   
+}
+.question__formlinput {
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid @textmain;
+    margin-bottom: 60px;
+    padding-bottom: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 139%;
+    color: @textmain;  
+}
+.question__formlinput::placeholder {
+    color: @textmain;
+}
+.question__formlinputtel {
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid @textmain;
+    margin-bottom: 62px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 139%;
+    color: @textmain;  
+}
+.question__formlinputtel::placeholder {
+    color: @textmain;    
+}
+.question__formlinputquestion{
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid @textmain;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 139%;    
+    color: @textmain;
+}
+.question__formlinputquestion::placeholder {
+    color: @textmain;    
+}
+.question__formlabelpd {
+    position: relative;
+    padding-top: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 164%;
+    color: @textmain;  
+    margin-bottom: 65px;      
+    @media (min-width: @desktop-width){
+        padding-top: 25px; 
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+}
+.questioncustom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.questioncustom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .questioncustom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-color: @textbright;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .questioncustom-checkbox:checked+label::before {
+    background-color: @textbright;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+  .question__formbutton {
+    display: flex;
+    width: 340px;
+    height: 51px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: @textbright;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 205%;
+    text-transform: uppercase;
+    color: @textmain;
+    border: none;
+    @media (min-width: @desktop-width){
+        width: 200px;
+        height: 51px;
+    }
+  }
+  .question__formbutton:hover {
+    background-color: #E4981E;
+    cursor: pointer;  
+}
